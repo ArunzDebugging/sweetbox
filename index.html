@@ -1,0 +1,588 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HOME</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    html{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .logo-content {
+        float: left;
+        position: relative;
+        margin-left: 30px;
+    }
+
+    .logo-content img {
+        width: 250px;
+    }
+
+    .address-content {
+        float: right;
+        padding-right: 20px;
+        padding-top: 10px;
+
+    }
+
+    .navbar {
+        width: 100%;
+        position: absolute;
+        margin-top: 65px;
+        background-color: black;
+    }
+
+    .navbar-nav {
+        list-style-type: none;
+
+    }
+
+    .nav-item {
+        float: left;
+        margin-top: -12px;
+    }
+
+    .nav-item a {
+        display: block;
+        color: white;
+        font-family: sans-serif;
+        text-align: center;
+        margin-left: 10px;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    /* Change the link color on hover */
+    .nav-item a:hover {
+        background-color: red;
+        color: white;
+    }
+
+    .active {
+        background-color: red;
+        color: white;
+    }
+
+    /* start slider css coding */
+    .mySlides {
+        display: none;
+    }
+
+    .carousel {
+        padding-top: 116px;
+    }
+
+    /* end slider css coding */
+    /*start css section coding*/
+    .popular-sweets,
+    .popular-savories,
+    popular-biscuits,
+    .popular-dry-food,
+    .popular-minute-khana {
+        padding-top: 20px;
+    }
+
+    .popular-sweets-header,
+    .popular-savories-header,
+    .popular-dry-food-header,
+    .popular-biscuits-header,
+    .popular-minute-khana-header {
+        text-align: center;
+        font-family: sans-serif;
+    }
+
+    .img-box-container {
+        display: flex;
+        padding: 40px 80px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .img-box {
+        border: 1px solid #ccc;
+        box-shadow: 0px 0px 10px #ddd;
+        width: 20%;
+        padding: 10px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .img-h,
+    .img-price {
+        text-align: center;
+        color: deeppink;
+        font-family: sans-serif;
+        line-height: 5px;
+    }
+
+    .img-btn {
+        width: 100px;
+        height: 40px;
+        color: white;
+        font-size:15px;
+        border: none;
+        border-radius: 5px;
+        font-family: sans-serif;
+        box-shadow: none;
+        background-color: #F45AAD;
+        outline: none;
+    }
+
+    .img-btn:hover {
+        background-color: deeppink;
+        cursor: pointer;
+    }
+
+    /*extra btn coding*/
+
+
+    /* start service coding */
+    .service-container {
+        width: 100%;
+        height: 120px;
+        text-align: center;
+    }
+
+    .payment,
+    .delivary,
+    .track {
+        width: 33%;
+        height: 120px;
+        float: left;
+        color: gray;
+    }
+
+    /*end service coding*/
+    /*start footer coding*/
+
+    .footer {
+        width: 100%;
+        height: 220px;
+        background-color: black;
+    }
+
+    .first-footer,
+    .second-footer,
+    .third-footer,
+    .fourth-footer {
+        width: 24%;
+        height: 220px;
+        float: left;
+        line-height: 25px;
+        color: gray;
+    }
+
+    .icon-box i:hover {
+        color: white;
+        cursor: pointer;
+    }
+
+    .second-footer i:hover {
+        color: white;
+        cursor: pointer;
+    }
+
+    .third-footer i:hover {
+        color: white;
+        cursor: pointer;
+    }
+
+    .powerby {
+        width: 100%;
+        height: 60px;
+        padding-top: 10px;
+        margin-bottom: 0;
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+
+    /*end footer coding */
+</style>
+
+<body>
+    <!--start header coding-->
+    <header>
+        <div class="logo-content">
+            <!-- <img src="photos/TheSweetShop.png"> -->
+           <h1 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">SWEET BOX</h1>
+        </div>
+        <!-- <div class="address-content"> -->
+            <!-- <strong> Venue : 4 Brook Bond road,<br> coimbatore, Tamilnadu <br></strong> -->
+               <!-- <strong>India's largest sweets and backeries shop</strong>  -->
+        <!-- </div>> -->
+    </header>
+    <br>
+    
+    <!--end header coding-->
+    <!--start nav coding-->
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="sweets.html" class="nav-link">Sweets</a></li>
+            <li class="nav-item"><a href="savories.html" class="nav-link">Savories</a></li>
+            <li class="nav-item"><a href="dryfood.html" class="nav-link">Dry Foods</a></li>
+            <li class="nav-item"><a href="biscuits.html" class="nav-link">Biscuits</a></li>
+            <li class="nav-item"><a href="minutekhana.html" class="nav-link">Minute Khana</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+            <li class="nav-item"><a href="login.html" class="nav-link">logout</a></li>
+            <li class="nav-item" style="float:right;"><a href="login.html" class="nav-link">Login & Signup</a></li>
+            
+            
+
+        </ul>
+        <a href="cart.html"><i class="fa fa-shopping-cart"
+                style="color: white;float:right;margin-right:30px;font-size:18px;"> Cart<div
+                    style="width:20px;height:20px;background-color:yellow; float: right;margin-left:7px;border-radius:40%;text-align: center;color: black;">
+                    <span id="cartNo">1</span></div></i>
+        </a>
+        <!-- <input type="search" style="width:290px;border:none;outline:none;border-radius:5px;padding:5px;display: none;margin-top:-2px" placeholder="search items" id="search-box"> -->
+        <i class="fa fa-search" style="color: white;float:right;font-size:18px;cursor:pointer;margin-right:18px;"
+            id="search-btn" onclick="demo()"></i>
+    </nav>
+    <!--end nav coding-->
+    <!--start profile setting coding-->
+    <div
+        style="width:50px; height:45px;background-color:red;color: white; float:right;margin-top:300px;position:fixed;z-index:1; margin-left:-10px;border-radius:8px;">
+        <a href="profile.html" style="text-decoration:none;color:white;"><i class="fa fa-gear fa-spin"
+                style="font-size: 32px;float:right;padding:7px;"></i></a>
+    </div>
+    <!--end profile setting coding-->
+    <!--start slider coding-->
+    <div style="width:400px;height:35px;z-index:1000;position: absolute;border-radius: 10px;margin-top:120px;margin-left:50%;display:none;"
+        id="search-box">
+        <input type="text"
+            style="width:400px;height: 30px;border-radius: 10px;outline: none;background-color:black;color: white;padding:10px;font-size:18px;"
+            placeholder="Search items">
+    </div>
+    <div class="carousel">
+        <img class="mySlides" src="https://image2.jdomni.in/banner/01112019/E4/7B/79/6410BFFCA6792E5C99EFB6D9AA_1572585326079.jpg?output-format=webp" style="width:100%">
+        <img class="mySlides" src="https://image3.jdomni.in/banner/01112019/89/AA/4D/783CFCFF5D5A4E7D6A226ECF5A_1572585313812.jpg?output-format=webp" style="width:100%">
+        <img class="mySlides" src="https://image2.jdomni.in/banner/01112019/E4/7B/79/6410BFFCA6792E5C99EFB6D9AA_1572585326079.jpg?output-format=webp" style="width:100%">
+        <img class="mySlides" src="https://image3.jdomni.in/banner/01112019/89/AA/4D/783CFCFF5D5A4E7D6A226ECF5A_1572585313812.jpg?output-format=webp" style="width:100%">
+        <img class="mySlides" src="https://image2.jdomni.in/banner/01112019/E4/7B/79/6410BFFCA6792E5C99EFB6D9AA_1572585326079.jpg?output-format=webp" style="width:100%">
+        <img class="mySlides" src="https://image3.jdomni.in/banner/01112019/89/AA/4D/783CFCFF5D5A4E7D6A226ECF5A_1572585313812.jpg?output-format=webp" style="width:100%">
+    </div>
+    <!--end slider coding-->
+    <!--start section coding-->
+    <section>
+        <!--start sweets coding-->
+        <div class="popular-sweets">
+            <h1 class="popular-sweets-header">OUR POPULAR SWEETS</h1>
+            <div class="img-box-container">
+                <div class="img-box" align="center">
+                    <img src="https://t3.ftcdn.net/jpg/02/46/31/00/360_F_246310098_v6gBGMpR1upxO03g7awJlB0ayYhfkL5V.jpg" style="width:100%">
+                    <h4 class="img-h">Laddu</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn"  onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="img-box" align="center">
+                    <img src="https://as2.ftcdn.net/v2/jpg/02/05/63/67/1000_F_205636780_NEluGRPOF8jamqX0WPZvmAwX8TgEY5Am.jpg" style="width:100%">
+                    <h4 class="img-h">Rasgulla</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="img-box" align="center">
+                    <img src="https://img.freepik.com/free-photo/indian-sweet-food-gulab-jamun-served-round-ceramic-bowl_466689-72201.jpg?w=2000" style="width:100%">
+                    <h4 class="img-h">Gulab Jamun</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="img-box" align="center">
+                    <img src="https://img.freepik.com/premium-photo/sandesh-shondesh-is-dessert-originating-from-bengal-india-created-with-milk-sugar_466689-83985.jpg?w=2000" style="width:100%">
+                    <h4 class="img-h">Sandesh</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="more-btn" style="font-size:40px; margin-top:100px;">
+                    <abbr title="More !"><a href="sweets.html" class="fa fa-angle-double-right"
+                            style="color:gray;text-decoration:none;" r></a></abbr>
+                </div>
+            </div>
+
+        </div>
+
+        <!--end sweets coding-->
+        <!--start savories coding-->
+        <div class="popular-savories">
+            <h1 class="popular-savories-header">SAVORIES</h1>
+            <div class="img-box-container">
+                <div class="img-box" align="center">
+                    <img src="https://media.istockphoto.com/id/579241576/photo/bhel-or-bhelpuri-chat-item-india.jpg?s=612x612&w=0&k=20&c=364xqRPYP-Dks_qvdrpnWZ_X3WH_UpwCV3vD-MAMlts=" style="width:100%">
+                    <h4 class="img-h">Bhel Puri</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="img-box" align="center">
+                    <img src="https://img.freepik.com/free-photo/falahari-chivda-upwas-chewda-farali-chivda-mixture-namkeen-with-dry-fruits-is-indian-snack_466689-91955.jpg" style="width:100%">
+                    <h4 class="img-h">Farali chevda</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="img-box" align="center">
+                    <img src="https://img.freepik.com/free-photo/moong-dal-namkeen-is-traditional-indian-deep-fried-snack_466689-91982.jpg?w=2000" style="width:100%">
+                    <h4 class="img-h">Moog dal</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="img-box" align="center">
+                    <img src="https://st2.depositphotos.com/5653638/11810/i/950/depositphotos_118107016-stock-photo-traditional-indian-deep-fried-salty.jpg" style="width:100%">
+                    <h4 class="img-h">Namki</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="more-btn" style="font-size:40px; margin-top:100px;">
+                    <abbr title="More !"><a href="savories.html" class="fa fa-angle-double-right"
+                            style="color:gray;text-decoration:none;" r></a></abbr>
+                </div>
+
+            </div>
+        </div>
+        <!--end savories coding-->
+        <!--start dry-food coding-->
+        <div class="popular-dry-food">
+            <h1 class="popular-dry-food-header">DRY FOODS</h1>
+            <div class="img-box-container">
+                <div class="img-box" align="center">
+                    <img src="https://img.freepik.com/free-photo/dried-raisins-bowl-table_1150-27257.jpg?w=2000" style="width:100%">
+                    <h4 class="img-h">Black Kishmish</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="img-box" align="center">
+                    <img src="https://c1.wallpaperflare.com/preview/367/634/512/nuts-cashew-bowl-salt.jpg" style="width:100%">
+                    <h4 class="img-h"> Kaju</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="img-box" align="center">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/473/468/878/pistachios-nuts-shell-white-background-wallpaper-preview.jpg" style="width:100%">
+                    <h4 class="img-h">Pista</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="img-box" align="center">
+                    <img src="https://wallpapercave.com/wp/wp4271183.jpg" style="width:100%">
+                    <h4 class="img-h">Badam</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="more-btn" style="font-size:40px; margin-top:100px;">
+                    <abbr title="More !"><a href="dryfood.html" class="fa fa-angle-double-right"
+                            style="color:gray;text-decoration:none;" r></a></abbr>
+                </div>
+            </div>
+        </div>
+        <!--end dry-food coding-->
+        <!--start biscuits coding-->
+        <div class="popular-biscuits">
+            <h1 class="popular-biscuits-header">POPULAR BISCUITS</h1>
+            <div class="img-box-container">
+                <div class="img-box" align="center">
+                    <img src="https://www.biscuitpeople.com/media/cache/resolve/platform_md/97be438e8a13c9ceac5158891e3cdaa51ab9dc0d.jpg" style="width:100%">
+                    <h4 class="img-h">Anisette cookies</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="img-box" align="center">
+                    <img src="https://www.biscuitpeople.com/media/cache/resolve/platform_md/58828f43b4950f598091c6d40af828f722c787b8.png" style="width:100%">
+                    <h4 class="img-h">Bath Oliver</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="img-box" align="center">
+                    <img src="https://www.biscuitpeople.com/media/cache/resolve/platform_md/6fa4a6147356c7307bd656429510c154e8529b90.jpg" style="width:100%">
+                    <h4 class="img-h">Barezek</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="img-box" align="center">
+                    <img src="https://www.biscuitpeople.com/media/cache/resolve/platform_md/0747b3dee5e45cd216e4f3ced492a4377577f584.jpg" style="width:100%">
+                    <h4 class="img-h">chinese almond cookies</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="more-btn" style="font-size:40px; margin-top:100px;">
+                    <abbr title="More !"><a href="biscuits.html" class="fa fa-angle-double-right"
+                            style="color:gray;text-decoration:none;" r></a></abbr>
+                </div>
+            </div>
+        </div>
+        <!--end biscuits coding-->
+        <!--start minute-khana coding-->
+        <div class="popular-minute-khana">
+            <h1 class="popular-minute-khana-header">MINUTE FOOD</h1>
+            <div class="img-box-container">
+                <div class="img-box" align="center">
+                    <img src="https://wallpapercave.com/wp/wp9199693.jpg" style="width:100%">
+                    <h4 class="img-h">Chhole Bhatura</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="img-box" align="center">
+                    <img src="https://thumbs.dreamstime.com/b/matra-chaat-kulcha-indian-food-36881629.jpg" style="width:100%">
+                    <h4 class="img-h">Chhole Kulcha</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="img-box" align="center">
+                    <img src="https://t4.ftcdn.net/jpg/01/17/49/71/360_F_117497155_F5EEvIFgJaulxVvZrANFs9ZrLYIlwNP1.jpg" style="width:100%">
+                    <h4 class="img-h">Cutlet</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="img-box" align="center">
+                    <img src="https://media.istockphoto.com/id/585328296/photo/raj-kachori.jpg?s=612x612&w=0&k=20&c=gZNfQfhbVjp7Zyb9_NAzqC8U5lD_0xnuaNCLXyCUTD8=" style="width:100%">
+                    <h4 class="img-h">Kachori</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="more-btn" style="font-size:40px; margin-top:100px;">
+                    <abbr title="More !"><a href="minutekhana.html" class="fa fa-angle-double-right"
+                            style="color:gray;text-decoration:none;" r></a></abbr>
+                </div>
+            </div>
+        </div>
+        <!--end savories coding-->
+    </section>
+    <!--end section coding-->
+    <!--start service coding-->
+    <div class="service-container">
+        <div class="payment">
+            <!-- <img src="photos/service01.png"> -->
+            <h4>100% SECURE PAYMENTS</h4>
+        </div>
+        <div class="delivary">
+            <!-- <img src="photos/service02.png"> -->
+            <h4>FAST DELIVERY ALL OVER INDIA</h4>
+
+        </div>
+        <div class="track">
+            <!-- <img src="photos/service04.png"> -->
+
+            <h4>TRACK YOUR ORDERS</h4>
+        </div>
+    </div>
+    <!--end service coding-->
+    <!--start footer coding-->
+    <footer class="footer">
+        <div class="first-footer" style="padding-left:30px;">
+            <h3><i>Address</i></h3>
+            Venue : 4 Brook Bond road,<br> coimbatore, Tamilnadu <br>
+                Phone No : 6296725332<br>
+                Another no : 7585069971<br>
+                Email:arunkumar @gmail.com
+            
+        </div>
+
+        <div class="second-footer">
+            <h3><i>Policy Information</i></h3>
+            <i>Privacy Policy</i><br>
+            <i>Cancellation and Return Policy</i><br>
+            <i>Contact Us</i><br>
+            <i>Shop Locator</i>
+
+        </div>
+
+        <div class="third-footer">
+            <h3><i>Useful Links</i></h3>
+            <i>Home</i><br>
+            <i>Sweets</i><br>
+            <i>Savories</i><br>
+            <i>Dry Foods</i><br>
+            <i>Biscuits</i>
+
+
+        </div>
+        <div class="fourth-footer">
+            <h3><i>Social Links</i></h3>
+            <div class="icon-box">
+                <i class="fa fa-facebook" style="float:left;padding-right: 10px;padding-top:5px;"></i>
+                <i>Facebook</i>
+            </div>
+
+            <div class="icon-box">
+                <i class="fa fa-google-plus" style="float:left;padding-right: 10px;padding-top:5px;"></i>
+                <i>Google</i>
+            </div>
+
+            <div class="icon-box">
+                <i class="fa fa-twitter" style="float:left;padding-right: 10px;padding-top:5px;"></i>
+                <i>Twitter</i>
+            </div>
+            <div class="icon-box">
+                <i class="fa fa-instagram" style="float:left;padding-right: 10px;padding-top:5px;"></i>
+                <i>Instagram</i>
+            </div>
+            <div class="icon-box">
+                <i class="fa fa-pinterest" style="float:left;padding-right: 10px;padding-top:5px;"></i>
+                <i>Pinterest</i>
+            </div>
+        </div>
+    </footer>
+    <!--end footer coding-->
+    <!--start power by coding-->
+    <!-- <div class="powerby">
+        <h4><i>Copyright © 2019 POWERED BY SOURAV</i></h4>
+       
+    </div> -->
+    <!--end power by coding-->
+    <!--start search box coding-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+    <script>
+       function abs(){
+        swal("Good job!", "You clicked the button!", "success");
+       }
+        function demo() {
+            var x = document.getElementById("search-box");
+            if (x.style.display == "none")
+                x.style.display = "block";
+            else if (x.style.display == 'block')
+                x.style.display = "none";
+        }
+    </script>
+    <!--end search box coding-->
+
+    <!--start slider js coding-->
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 4000); // Change image every 2 seconds
+        }
+
+       
+    </script>
+    <!--end slider js coding-->
+    <script src="js/index.js"></script>
+ 
+
+</body>
+
+</html>
